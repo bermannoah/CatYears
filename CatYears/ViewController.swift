@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func submitCatAge(_ sender: Any) {
+        
+        inCatYears.text = "\(Int(inHumanYears.text!)! * 7)"
+        
+    }
+    
+    @IBOutlet var inHumanYears: UITextField!
+    
+    @IBOutlet var inCatYears: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
